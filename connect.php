@@ -1,9 +1,9 @@
 <?php
-$host = "RAILWAY_HOST";
-$user = "RAILWAY_USER";
-$pass = "RAILWAY_PASSWORD";
-$db   = "RAILWAY_DATABASE";
-$port = RAILWAY_PORT;
+$host = "mysql.railway.internal";
+$user = "root";
+$pass = "YVhiWDayyMuALJChfnhSaeOPmurKpFPq";
+$db   = "railway";
+$port = 3306;
 
 $conn = new mysqli($host, $user, $pass, $db, $port);
 if ($conn->connect_error) {
