@@ -5,7 +5,7 @@ require "connect.php";
 $username = mysqli_real_escape_string($conn, $_POST['username']);
 $password = $_POST['password'];
 
-$sql = "SELECT * FROM users WHERE username='$username'";
+$sql = "SELECT * FROM user WHERE username='$username'";
 $result = $conn->query($sql);
 
 if ($result->num_rows == 1) {
