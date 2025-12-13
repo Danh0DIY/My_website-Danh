@@ -4,7 +4,7 @@ require "connect.php";
 $username = mysqli_real_escape_string($conn, $_POST['username']);
 $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-$sql = "INSERT INTO users (username, password)
+$sql = "INSERT INTO user (username, password)
         VALUES ('$username', '$password')";
 
 if ($conn->query($sql)) {
